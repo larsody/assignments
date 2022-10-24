@@ -1,0 +1,264 @@
+
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center; 
+}
+
+* {
+  margin: 0; 
+  padding: 0; 
+}
+
+.intro {
+  top: 0;
+  background: #e0ebe8;
+  min-height: 55vh;
+  padding-top: 45vh;
+}
+
+.intro p {
+  color: green;
+}
+
+nav ul {
+  text-align: right;
+  position: fixed;
+  width: 100%; 
+  background-color: #4dabf5;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 55px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: black;
+}*
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+article img, article.featured img{
+   height: 80%;
+  width: 100%;
+   border: 2px solid lightblue;
+  }
+.work {
+  padding-top: 60px;
+  margin-top: -60px;
+  background:  #8c8c8c;
+}
+
+.work .work-header {
+  margin-top: 50px;
+  color: #008080;
+  font-weight: normal;
+}
+
+.project {
+  background: #008080;
+  display: flex;
+  border: 2px solid lightblue;
+  height: 500px;
+  width: 500px;
+  margin: 100px 100px;
+}
+
+.project-pic {
+  width: 280px;
+  height: 100px;
+  border-bottom: 2px solid lightblue;
+}
+
+.project-title {
+  font-weight: bold;
+}
+.container
+{
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+  background: linear-gradient(#0f4675, #0f4675 50%, #fff 50%, #fff 100%);
+}
+.container .box
+{
+	position: relative;
+	width: 1000px;
+	background: #fff;
+	padding: 100px 40px 60px;
+	box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
+}
+.container .box:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #ff226d;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.5s;
+}
+
+.container .box:hover:before 
+{
+	transform: scaleY(1);
+	transform-origin: bottom;
+	transition: transform 0.5s;
+}
+.container .box h2
+{
+	position: absolute;
+	left: 40px;
+	top: 60px;
+	font-size: 4em;
+	font-weight: 500;
+	z-index: 1;
+	opacity: 0.1;
+	transition: 0.5s;
+}
+
+.container .box:hover h2
+{
+	opacity: 1;
+	color: #fff;
+	transform: translateY(-40px);
+} 
+
+.container .box h3
+{
+	position: relative;
+	font-size: 1.5em;
+	z-index: 2;
+	color: #333;
+	transition: 0.5s;
+}
+.container .box p
+{
+	position: relative;
+	z-index: 2;
+	color: #555;
+	transition: 0.5s;
+}
+.container .box:hover h3,
+.container .box:hover p
+.show-all {
+  text-decoration: none;
+  display: block; 
+  width: 200px; 
+  height: 30px;
+  margin: 20px auto 90px; 
+  background: #e0ebe8;
+  color: #008080;
+  font-weight: bold; 
+  font-size: 1em;
+  border: 2px solid #90C695;
+  border-radius: 4px; 
+  cursor: pointer; 
+  padding-top: 10px;
+  
+}
+
+.show-all:hover {
+  background: #E4F1FE;
+  color: green;
+}
+
+@media only screen and (max-width: 500px) {
+  nav ul {
+    text-align: center;
+  }
+.hobbies h4{
+
+	font-size: clamp(30px, 8vw, 45px);
+}
+
+ nav ul li {
+    margin: 20px;
+  }
+
+  .project {
+    margin: 40px 0;
+  }
+}
+.contact {
+  padding-top: 30px;
+   justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: #C8F7C5;
+  padding-bottom: 30px;
+}
+
+.header {
+  padding: 50px 0 60px; 
+}
+
+.box-main {
+  height: auto;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    max-width: 100%;
+    margin: auto;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: #ffffff;
+}
+
+.box-main,
+.form__input,
+.form__button {
+    font: 100 1rem 'Quicksand', sans-serif;
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+    border-color: var(--color-primary);
+    background: #ffffff;
+}
+
+footer {
+  padding: 20px;
+  background: #22313F;
+  color: white;
+  line-height: 40px;
+}
+
+footer a {
+  color: white;
+}
+
+
