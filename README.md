@@ -1,11 +1,9 @@
-# Task Title: Week 4 Task > CSS cont.
+# Task Title: Week 5 Tasks > Git and GitHub
 ## Elective Frontend ( HTML/CSS/JavaScript)
 
 
-A. Recreate a 3-column card design using CSS Flexbox  Layout
-- This task should be on the index.html file.
-- All the information and images needed for the design can be found in this folder
+a. Push all week 3 to week 5 assignments to a GitHub repo called “Assignments''. The repository should have three branches named week3, week4, and week5 on GitHub.
 
-B. Recreate the design using CSS Grid Layout  
-- This task should be on the grid.html file.
-- You can use any background colour of your choice.
+b. Update your profile with your GitHub link.
+
+c. Setup your [username].md file on GitHub using the link
