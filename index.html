@@ -1,0 +1,113 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Login / Sign Up Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="firstsection">
+    <div class="box-main">
+      <div class="firstHalf">
+        <form class="form" id="createregistration">
+          <h1 class="form__title">Register</h1>
+          <div class="form__input-group">
+            <fieldset>
+              <input type="text" id="firstname" class="form__input" autofocus placeholder="First name">
+            </fieldset>
+          </div>
+          <div class="form__input-group">
+            <fieldset>
+              <input type="text" id="lasttname" class="form__input" placeholder="Last name" required>
+            </fieldset>
+          </div>
+
+          <div class="form__input-group">
+            <fieldset>
+              <input type="text" id="phonenumber" class="form__input" autofocus placeholder="Phone number">
+            </fieldset>
+          </div>
+          <div class="form__input-group">
+            <fieldset>
+              <input type="text" class="form__input" autofocus placeholder="Email Address">
+            </fieldset>
+          </div>
+          <div class="form__input-group">
+            <fieldset>
+              <label>Gender
+                <select>
+                  <option value="" disabled selected>Select your gender</option>
+                  <option value=" 1">Male</option>
+                  <option value="2">Female</option>
+                  <option value="3">Other</option>
+                </select>
+              </label>
+            </fieldset>
+          </div>
+          <div class="form__input-group">
+            <fieldset>
+              <label>Date of birth
+                <input type="date" id="setbir_birthday" name="birthday">
+              </label>
+            </fieldset>
+          </div>
+          <div class="form__input-group">
+            <fieldset id="setcolor">
+              <label for="favcolor">Favorite color
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+              </label>
+            </fieldset>
+          </div>
+          <button class="form__button" type="submit">Register</button>
+          <p class="form__text">
+            <a class="form__link" href="#login">Already have an account? Login</a>
+          </p>
+        </form>
+        <div>
+        </div>
+  </section>
+  <section class="secondsection">
+    <div class="box-main">
+      <div class="secondHalf">
+        <form class="form" id="login">
+          <h1 class="form__title">Login</h1>
+          <div class="form__message form__message--error"></div>
+          <div class="form__input-group">
+            <input type="text" class="form__input" autofocus placeholder="Email" required>
+            <div class="form__input-error-message"></div>
+          </div>
+          <div class="form__input-group">
+            <input type="password" class="form__input" autofocus placeholder="Password" required>
+            <div class="form__input-error-message"></div>
+          </div>
+          <button onclick="document.getElementById('id01').style.display='block'" "form__button"
+            type="submit">Continue</button>
+          <p class="form__text">
+            <a href="#" class="form__link">Forgot your password?</a>
+          </p>
+          <p class="form__text">
+            <a class="form__link" href="#createregistration">Don't have an account? Create account</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+<section>
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+      title="Close Modal">&times;</span>
+    <form class="modal-content animate" action="/action_page.php">
+
+      <head>
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+      </head>
+      <div class="card">
+        <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+          <i class="checkmark">✓</i>
+        </div>
+        <h1>Success</h1>
+        <p>We received your registration;<br /> we'll be in touch shortly!</p>
+      </div>
+    </form>
+</section>
